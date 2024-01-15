@@ -11,7 +11,7 @@ fun main() {
 
     fun likesName(likes: Int) {  //   Задача 2
 
-        if (likes % 10 != 1 || likes % 100 == 1 || likes == 11) println("Понравилось $likes людям") else println("Понравилось $likes человеку") // Функция определения люди-человеки))
+        if (likes % 10 == 1 || likes % 100 == 1 || likes == 11) println("Понравилось $likes человеку") else println("Понравилось $likes людям") // Функция определения люди-человеки))
     }
 
     fun calculateDiscount(sum: Int, regularUser: Boolean): Double {   //  Задача 3
@@ -31,7 +31,7 @@ fun main() {
 
     println("Цена со скидкой = " + calculateDiscount(100000, true))
 
-    likesName(19881)
+    likesName(1000)
 
     computeFee(10000.0)
 }
